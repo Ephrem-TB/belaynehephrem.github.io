@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Ephrem Belayneh | Data Analytics Portfolio</title>
 
     <style>
@@ -12,9 +13,13 @@
             padding: 0;
         }
 
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.6;
+            line-height: 1.7;
             color: #333;
             background: #f5f7fa;
         }
@@ -23,22 +28,30 @@
             background: #17365d;
             color: white;
             text-align: center;
-            padding: 60px 20px;
+            padding: 80px 20px;
         }
 
         header h1 {
-            font-size: 42px;
+            font-size: 44px;
+            margin-bottom: 15px;
+        }
+
+        header .subtitle {
+            font-size: 22px;
             margin-bottom: 10px;
         }
 
-        header p {
-            font-size: 20px;
+        header .location {
+            font-size: 16px;
+            opacity: 0.9;
         }
 
         nav {
             background: #102a43;
             text-align: center;
-            padding: 15px;
+            padding: 16px;
+            position: sticky;
+            top: 0;
         }
 
         nav a {
@@ -54,56 +67,48 @@
 
         section {
             max-width: 1000px;
-            margin: 40px auto;
+            margin: 50px auto;
             padding: 0 20px;
         }
 
         h2 {
             color: #17365d;
-            margin-bottom: 20px;
             font-size: 30px;
+            margin-bottom: 20px;
         }
 
-        .about,
-        .project,
-        .skills {
+        .about {
             background: white;
-            padding: 25px;
-            margin-bottom: 25px;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            padding: 35px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
         }
 
-        .project h3 {
-            color: #17365d;
-            margin-bottom: 10px;
+        .about p {
+            margin-bottom: 18px;
         }
 
-        .skills-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-
-        .skill {
-            background: #e8eef5;
-            padding: 8px 14px;
-            border-radius: 20px;
+        .highlight {
             font-weight: bold;
+            color: #17365d;
+        }
+
+        .buttons {
+            margin-top: 25px;
         }
 
         .button {
             display: inline-block;
             background: #17365d;
             color: white;
-            padding: 10px 18px;
+            padding: 11px 20px;
             text-decoration: none;
             border-radius: 5px;
-            margin-top: 10px;
+            margin-right: 10px;
         }
 
         .button:hover {
-            background: #0f2744;
+            background: #102a43;
         }
 
         footer {
@@ -111,17 +116,26 @@
             color: white;
             text-align: center;
             padding: 25px;
-            margin-top: 50px;
+            margin-top: 60px;
         }
 
         @media (max-width: 600px) {
+
             header h1 {
-                font-size: 32px;
+                font-size: 34px;
+            }
+
+            header .subtitle {
+                font-size: 18px;
             }
 
             nav a {
                 display: inline-block;
-                margin: 5px;
+                margin: 5px 8px;
+            }
+
+            .about {
+                padding: 25px;
             }
         }
     </style>
@@ -129,141 +143,186 @@
 
 <body>
 
-    <header>
+    <!-- HOME -->
+
+    <header id="home">
+
         <h1>Ephrem Belayneh</h1>
-        <p>Data Analytics | Healthcare Data | Information Systems</p>
-        <p>Lawrenceville, Georgia</p>
+
+        <p class="subtitle">
+            Data Analytics | Healthcare Data | Information Systems
+        </p>
+
+        <p class="location">
+            Lawrenceville, Georgia
+        </p>
+
+        <div class="buttons">
+
+            <a class="button" href="#about">
+                About Me
+            </a>
+
+            <a class="button" href="#projects">
+                View Projects
+            </a>
+
+        </div>
+
     </header>
 
+
+    <!-- NAVIGATION -->
+
     <nav>
+
+        <a href="#home">Home</a>
+
         <a href="#about">About</a>
+
         <a href="#projects">Projects</a>
+
         <a href="#skills">Skills</a>
+
         <a href="#resume">Resume</a>
+
         <a href="#contact">Contact</a>
+
     </nav>
 
+
+    <!-- ABOUT ME -->
+
     <section id="about">
+
         <h2>About Me</h2>
 
         <div class="about">
+
             <p>
                 I am an information systems and data analytics professional
-                interested in using data to support better business and
-                healthcare decisions.
+                developing practical skills in data analysis, healthcare
+                information, and business operations.
             </p>
 
             <p>
-                My background combines computer information systems,
-                economics, project coordination, technical operations,
-                data analysis, and Microsoft Office applications.
+                My educational background includes a
+                <span class="highlight">
+                    Bachelor of Science in Computer Information Systems
+                </span>
+                and a background in economics, supported by training in
+                data analytics and Microsoft Office applications.
             </p>
 
             <p>
-                I am currently developing practical data analytics projects
-                using real-world datasets, with a particular interest in
-                healthcare data and information systems.
+                My professional experience includes project coordination,
+                technical operations, data management, planning, and
+                administrative activities. These experiences have strengthened
+                my ability to organize information, work with data, coordinate
+                projects, and support operational processes.
             </p>
+
+            <p>
+                I am particularly interested in applying these skills to
+                <span class="highlight">
+                    healthcare data, electronic health records, medical
+                    information, reporting, and data-driven operations.
+                </span>
+            </p>
+
+            <p>
+                On this website, I showcase practical projects using
+                real-world datasets and tools such as
+                <span class="highlight">
+                    Excel, SQL, Power BI, and data visualization.
+                </span>
+                My goal is to demonstrate not only what I have studied,
+                but also how I can apply data skills to practical problems.
+            </p>
+
+            <div class="buttons">
+
+                <a class="button" href="#projects">
+                    Explore My Projects
+                </a>
+
+            </div>
+
         </div>
+
     </section>
+
+
+    <!-- PROJECTS -->
 
     <section id="projects">
-        <h2>Data Analytics Projects</h2>
 
-        <div class="project">
-            <h3>Healthcare Appointment No-Show Analysis</h3>
+        <h2>Featured Projects</h2>
+
+        <div class="about">
 
             <p>
-                Analysis of healthcare appointment data to identify patterns
-                associated with missed appointments and explore factors that
-                may affect attendance.
+                My portfolio projects will demonstrate practical analysis of
+                healthcare and business datasets using Excel, SQL, Power BI,
+                and other data tools.
             </p>
 
             <p>
-                <strong>Tools:</strong> Excel, SQL, Power BI
+                <strong>Coming next:</strong>
+                Healthcare Appointment No-Show Analysis
             </p>
 
-            <a class="button" href="#">
-                View Project
-            </a>
         </div>
 
-        <div class="project">
-            <h3>Hospital Patient Data Analysis</h3>
-
-            <p>
-                A practical analysis of patient and hospital data designed to
-                identify trends in patient demographics, services, outcomes,
-                and operational performance.
-            </p>
-
-            <p>
-                <strong>Tools:</strong> Excel, SQL, Power BI
-            </p>
-
-            <a class="button" href="#">
-                View Project
-            </a>
-        </div>
-
-        <div class="project">
-            <h3>Healthcare Operations Dashboard</h3>
-
-            <p>
-                An interactive dashboard designed to demonstrate how
-                healthcare organizations can use data to monitor key
-                operational indicators and support decision-making.
-            </p>
-
-            <p>
-                <strong>Tools:</strong> Excel, Power BI
-            </p>
-
-            <a class="button" href="#">
-                View Project
-            </a>
-        </div>
     </section>
+
+
+    <!-- SKILLS -->
 
     <section id="skills">
+
         <h2>Skills</h2>
 
-        <div class="skills">
-            <div class="skills-list">
-                <span class="skill">Microsoft Excel</span>
-                <span class="skill">Microsoft Office</span>
-                <span class="skill">Data Entry</span>
-                <span class="skill">Data Analysis</span>
-                <span class="skill">SQL</span>
-                <span class="skill">Power BI</span>
-                <span class="skill">Data Visualization</span>
-                <span class="skill">Healthcare Data</span>
-                <span class="skill">Information Systems</span>
-                <span class="skill">Project Coordination</span>
-            </div>
+        <div class="about">
+
+            <p>
+                Microsoft Excel • Microsoft Office • Data Entry •
+                Data Analysis • SQL • Power BI • Data Visualization •
+                Healthcare Data • Information Systems • Project Coordination
+            </p>
+
         </div>
+
     </section>
 
+
+    <!-- RESUME -->
+
     <section id="resume">
+
         <h2>Resume</h2>
 
         <div class="about">
+
             <p>
-                My professional background includes information systems,
-                economics, project coordination, technical operations,
-                data analysis, and administrative support.
+                My resume will provide additional information about my
+                education, professional experience, technical skills,
+                certifications, and projects.
             </p>
 
-            <a class="button" href="#">
-                Download Resume
-            </a>
         </div>
+
     </section>
 
+
+    <!-- CONTACT -->
+
     <section id="contact">
+
         <h2>Contact</h2>
 
         <div class="about">
+
             <p>
                 I am interested in opportunities involving data analytics,
                 healthcare data, information systems, records, and
@@ -272,18 +331,25 @@
 
             <p>
                 <strong>Email:</strong>
-                YourEmail@example.com
+                Add your professional email here
             </p>
 
             <p>
                 <strong>LinkedIn:</strong>
                 Add your LinkedIn profile here
             </p>
+
         </div>
+
     </section>
 
+
     <footer>
-        <p>© 2026 Ephrem Belayneh | Data Analytics Portfolio</p>
+
+        <p>
+            © 2026 Ephrem Belayneh | Data Analytics Portfolio
+        </p>
+
     </footer>
 
 </body>
