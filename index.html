@@ -1,502 +1,522 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Ephrem Belayneh | Data Analytics Portfolio</title>
+```
+<meta charset="UTF-8">
 
-    <style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+<title>Ephrem Belayneh | Data Analytics Portfolio</title>
 
-        html {
-            scroll-behavior: smooth;
-        }
+<style>
 
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            line-height: 1.7;
-            color: #333;
-            background: #f5f7fa;
-        }
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
 
-        /* HEADER */
+    html {
+        scroll-behavior: smooth;
+    }
 
-        header {
-            background: #17365d;
-            color: white;
-            text-align: center;
-            padding: 80px 20px;
-        }
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.7;
+        color: #333;
+        background: #f5f7fa;
+    }
+
+    /* HEADER */
+
+    header {
+        background: #17365d;
+        color: white;
+        text-align: center;
+        padding: 75px 20px;
+    }
+
+    header h1 {
+        font-size: 44px;
+        margin-bottom: 12px;
+    }
+
+    header .subtitle {
+        font-size: 22px;
+        margin-bottom: 8px;
+    }
+
+    header .location {
+        font-size: 16px;
+        opacity: 0.9;
+    }
+
+    /* NAVIGATION */
+
+    nav {
+        background: #102a43;
+        text-align: center;
+        padding: 16px;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 14px;
+        font-weight: bold;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+    /* SECTIONS */
+
+    section {
+        max-width: 1000px;
+        margin: 50px auto;
+        padding: 0 20px;
+    }
+
+    h2 {
+        color: #17365d;
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    h3 {
+        color: #17365d;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    /* CONTENT BOX */
+
+    .box {
+        background: white;
+        padding: 35px;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        margin-bottom: 25px;
+    }
+
+    .box p {
+        margin-bottom: 18px;
+    }
+
+    .highlight {
+        font-weight: bold;
+        color: #17365d;
+    }
+
+    /* SKILLS */
+
+    .skills-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 15px;
+    }
+
+    .skill {
+        background: #e8eef5;
+        padding: 9px 15px;
+        border-radius: 20px;
+        font-weight: bold;
+    }
+
+    /* PROJECTS */
+
+    .project {
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        margin-bottom: 25px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    }
+
+    .project h3 {
+        margin-top: 0;
+    }
+
+    /* PROJECT / RESUME BUTTONS */
+
+    .button {
+        display: inline-block;
+        background: #17365d;
+        color: white;
+        padding: 11px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 10px;
+        margin-right: 8px;
+    }
+
+    .button:hover {
+        background: #102a43;
+    }
+
+    /* EMAIL */
+
+    .email-link {
+        color: #17365d;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .email-link:hover {
+        text-decoration: underline;
+    }
+
+    /* FOOTER */
+
+    footer {
+        background: #102a43;
+        color: white;
+        text-align: center;
+        padding: 25px;
+        margin-top: 60px;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 600px) {
 
         header h1 {
-            font-size: 44px;
-            margin-bottom: 12px;
+            font-size: 34px;
         }
 
         header .subtitle {
-            font-size: 22px;
-            margin-bottom: 8px;
-        }
-
-        header .location {
-            font-size: 16px;
-            opacity: 0.9;
-        }
-
-        /* NAVIGATION */
-
-        nav {
-            background: #102a43;
-            text-align: center;
-            padding: 16px;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
+            font-size: 18px;
         }
 
         nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 14px;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        /* SECTIONS */
-
-        section {
-            max-width: 1000px;
-            margin: 50px auto;
-            padding: 0 20px;
-        }
-
-        h2 {
-            color: #17365d;
-            font-size: 30px;
-            margin-bottom: 20px;
-        }
-
-        h3 {
-            color: #17365d;
-            margin-top: 20px;
-            margin-bottom: 10px;
-        }
-
-        /* CONTENT BOX */
-
-        .box {
-            background: white;
-            padding: 35px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-            margin-bottom: 25px;
-        }
-
-        .box p {
-            margin-bottom: 18px;
-        }
-
-        .highlight {
-            font-weight: bold;
-            color: #17365d;
-        }
-
-        /* SKILLS */
-
-        .skills-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 15px;
-        }
-
-        .skill {
-            background: #e8eef5;
-            padding: 9px 15px;
-            border-radius: 20px;
-            font-weight: bold;
-        }
-
-        /* PROJECTS */
-
-        .project {
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            margin-bottom: 25px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-        }
-
-        .project h3 {
-            margin-top: 0;
-        }
-
-        /* BUTTONS */
-
-        .button {
             display: inline-block;
-            background: #17365d;
-            color: white;
-            padding: 11px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 10px;
-            margin-right: 8px;
+            margin: 5px 8px;
         }
 
-        .button:hover {
-            background: #102a43;
-        }
-
-        /* FOOTER */
-
-        footer {
-            background: #102a43;
-            color: white;
-            text-align: center;
+        .box,
+        .project {
             padding: 25px;
-            margin-top: 60px;
         }
 
-        /* MOBILE */
+    }
 
-        @media (max-width: 600px) {
+</style>
+```
 
-            header h1 {
-                font-size: 34px;
-            }
-
-            header .subtitle {
-                font-size: 18px;
-            }
-
-            nav a {
-                display: inline-block;
-                margin: 5px 8px;
-            }
-
-            .box,
-            .project {
-                padding: 25px;
-            }
-
-        }
-
-    </style>
 </head>
 
-
 <body>
-
 
 <!-- HOME -->
 
 <header id="home">
 
-    <h1>Ephrem Belayneh</h1>
+```
+<h1>Ephrem Belayneh</h1>
 
-    <p class="subtitle">
-        Data Analytics | Healthcare Data | Information Systems
-    </p>
+<p class="subtitle">
+    Data Analytics | Healthcare Data | Information Systems
+</p>
 
-    <p class="location">
-        Lawrenceville, Georgia
-    </p>
+<p class="location">
+    Lawrenceville, Georgia
+</p>
+```
 
-    <a class="button" href="#about">
-        About Me
-    
-    <a class="button" href="#projects">
-        View Projects
-  
 </header>
-
 
 <!-- NAVIGATION -->
 
 <nav>
 
-    <a href="#home">Home</a>
+```
+<a href="#home">Home</a>
 
-    <a href="#about">About</a>
+<a href="#about">About</a>
 
-    <a href="#skills">Skills</a>
+<a href="#skills">Skills</a>
 
-    <a href="#education">Education</a>
+<a href="#education">Education</a>
 
-    <a href="#projects">Projects</a>
+<a href="#projects">Projects</a>
 
-    <a href="#resume">Resume</a>
+<a href="#resume">Resume</a>
 
-    <a href="#contact">Contact</a>
+<a href="#contact">Contact</a>
+```
 
 </nav>
-
 
 <!-- ABOUT ME -->
 
 <section id="about">
 
-    <h2>About Me</h2>
+```
+<h2>About Me</h2>
 
-    <div class="box">
+<div class="box">
 
-        <p>
-            I am an information systems and data analytics professional
-            developing practical skills in data analysis, healthcare
-            information, and business operations.
-        </p>
+    <p>
+        I am an information systems and data analytics professional
+        developing practical skills in data analysis, healthcare
+        information, and business operations.
+    </p>
 
-        <p>
-            My educational background includes a
-            <span class="highlight">
-                Bachelor of Science in Computer Information Systems
-            </span>
-            and a background in economics, supported by training in
-            data analytics and Microsoft Office applications.
-        </p>
+    <p>
+        My educational background includes a
+        <span class="highlight">
+            Bachelor of Science in Computer Information Systems
+        </span>
+        and a background in economics, supported by training in
+        data analytics and Microsoft Office applications.
+    </p>
 
-        <p>
-            My professional experience includes project coordination,
-            technical operations, data management, planning, and
-            administrative activities. These experiences have strengthened
-            my ability to organize information, work with data, coordinate
-            projects, and support operational processes.
-        </p>
+    <p>
+        My professional experience includes project coordination,
+        technical operations, data management, planning, and
+        administrative activities. These experiences have strengthened
+        my ability to organize information, work with data, coordinate
+        projects, and support operational processes.
+    </p>
 
-        <p>
-            I am particularly interested in applying these skills to
-            <span class="highlight">
-                healthcare data, electronic health records, medical
-                information, reporting, and data-driven operations.
-            </span>
-        </p>
+    <p>
+        I am particularly interested in applying these skills to
+        <span class="highlight">
+            healthcare data, electronic health records, medical
+            information, reporting, and data-driven operations.
+        </span>
+    </p>
 
-        <p>
-            This portfolio showcases practical projects using real-world
-            datasets and tools such as
-            <span class="highlight">
-                Excel, SQL, Tableau, and data visualization.
-            </span>
-        </p>
+    <p>
+        This portfolio showcases practical projects using real-world
+        datasets and tools such as
+        <span class="highlight">
+            Excel, SQL, Tableau, and data visualization.
+        </span>
+    </p>
 
-    </div>
+</div>
+```
 
 </section>
-
 
 <!-- SKILLS -->
 
 <section id="skills">
 
-    <h2>Skills</h2>
+```
+<h2>Skills</h2>
 
-    <div class="box">
+<div class="box">
 
-        <h3>Core Skills</h3>
+    <h3>Core Skills</h3>
 
-        <div class="skills-list">
+    <div class="skills-list">
 
-            <span class="skill">Microsoft Excel</span>
+        <span class="skill">Microsoft Excel</span>
 
-            <span class="skill">Microsoft Office</span>
+        <span class="skill">Microsoft Office</span>
 
-            <span class="skill">Data Entry</span>
+        <span class="skill">Data Entry</span>
 
-            <span class="skill">Data Management</span>
+        <span class="skill">Data Management</span>
 
-            <span class="skill">Information Systems</span>
+        <span class="skill">Information Systems</span>
 
-            <span class="skill">Project Coordination</span>
+        <span class="skill">Project Coordination</span>
 
-            <span class="skill">Document & Records Management</span>
-
-        </div>
-
-
-        <h3>Data Analytics</h3>
-
-        <div class="skills-list">
-
-            <span class="skill">Data Cleaning</span>
-
-            <span class="skill">Data Analysis</span>
-
-            <span class="skill">Data Visualization</span>
-
-            <span class="skill">SQL</span>
-
-            <span class="skill">Tableau</span>
-
-        </div>
-
-
-        <h3>Healthcare & EHR</h3>
-
-        <div class="skills-list">
-
-            <span class="skill">Electronic Health Records</span>
-
-            <span class="skill">Healthcare Data</span>
-
-            <span class="skill">Healthcare Information Management</span>
-
-        </div>
+        <span class="skill">Document & Records Management</span>
 
     </div>
 
-</section>
 
+    <h3>Data Analytics</h3>
+
+    <div class="skills-list">
+
+        <span class="skill">Data Cleaning</span>
+
+        <span class="skill">Data Analysis</span>
+
+        <span class="skill">Data Visualization</span>
+
+        <span class="skill">SQL</span>
+
+        <span class="skill">Tableau</span>
+
+    </div>
+
+
+    <h3>Healthcare & EHR</h3>
+
+    <div class="skills-list">
+
+        <span class="skill">Electronic Health Records</span>
+
+        <span class="skill">Healthcare Data</span>
+
+        <span class="skill">Healthcare Information Management</span>
+
+    </div>
+
+</div>
+```
+
+</section>
 
 <!-- EDUCATION -->
 
 <section id="education">
 
-    <h2>Education & Certifications</h2>
+```
+<h2>Education & Certifications</h2>
 
-    <div class="box">
+<div class="box">
 
-        <p>
-            <strong>BSc — Computer Information Systems</strong>
-        </p>
+    <p>
+        <strong>BSc — Computer Information Systems</strong>
+    </p>
 
-        <p>
-            <strong>BA — Economics</strong>
-        </p>
+    <p>
+        <strong>BA — Economics</strong>
+    </p>
 
-        <p>
-            <strong>Master's — Development Studies</strong>
-        </p>
+    <p>
+        <strong>Master's — Development Studies</strong>
+    </p>
 
-        <p>
-            <strong>Google Data Analytics Professional Certificate</strong>
-        </p>
+    <p>
+        <strong>Google Data Analytics Professional Certificate</strong>
+    </p>
 
-        <p>
-            <strong>EHR Management Certificate — In Progress</strong><br>
-            Gwinnett Technical College
-        </p>
+    <p>
+        <strong>EHR Management Certificate — In Progress</strong><br>
+        Gwinnett Technical College
+    </p>
 
-    </div>
+</div>
+```
 
 </section>
-
 
 <!-- PROJECTS -->
 
 <section id="projects">
 
-    <h2>Data Analytics Projects</h2>
+```
+<h2>Data Analytics Projects</h2>
 
 
-    <div class="project">
+<div class="project">
 
-        <h3>
-            Healthcare Appointment No-Show Analysis
-        </h3>
+    <h3>
+        Healthcare Appointment No-Show Analysis
+    </h3>
 
-        <p>
-            A practical analysis of healthcare appointment data to identify
-            patterns associated with missed appointments and explore factors
-            that may affect patient attendance.
-        </p>
+    <p>
+        A practical analysis of healthcare appointment data to identify
+        patterns associated with missed appointments and explore factors
+        that may affect patient attendance.
+    </p>
 
-        <p>
-            <strong>Tools:</strong>
-            Excel, SQL, Tableau
-        </p>
+    <p>
+        <strong>Tools:</strong>
+        Excel, SQL, Tableau
+    </p>
 
-        <a class="button" href="#">
-            View Project
-        </a>
+    <a class="button" href="#">
+        View Project
+    </a>
 
-    </div>
-
-
-    <div class="project">
-
-        <h3>
-            Hospital Patient Data Analysis
-        </h3>
-
-        <p>
-            Analysis of patient and hospital data to explore demographics,
-            services, outcomes, and operational patterns.
-        </p>
-
-        <p>
-            <strong>Tools:</strong>
-            Excel, SQL, Tableau
-        </p>
-
-        <a class="button" href="#">
-            View Project
-        </a>
-
-    </div>
+</div>
 
 
-    <div class="project">
+<div class="project">
 
-        <h3>
-            Healthcare Operations Dashboard
-        </h3>
+    <h3>
+        Hospital Patient Data Analysis
+    </h3>
 
-        <p>
-            A data visualization project designed to demonstrate how
-            healthcare organizations can monitor operational indicators
-            and use data to support decision-making.
-        </p>
+    <p>
+        Analysis of patient and hospital data to explore demographics,
+        services, outcomes, and operational patterns.
+    </p>
 
-        <p>
-            <strong>Tools:</strong>
-            Excel, Tableau
-        </p>
+    <p>
+        <strong>Tools:</strong>
+        Excel, SQL, Tableau
+    </p>
 
-        <a class="button" href="#">
-            View Project
-        </a>
+    <a class="button" href="#">
+        View Project
+    </a>
 
-    </div>
+</div>
+
+
+<div class="project">
+
+    <h3>
+        Healthcare Operations Dashboard
+    </h3>
+
+    <p>
+        A data visualization project designed to demonstrate how
+        healthcare organizations can monitor operational indicators
+        and use data to support decision-making.
+    </p>
+
+    <p>
+        <strong>Tools:</strong>
+        Excel, Tableau
+    </p>
+
+    <a class="button" href="#">
+        View Project
+    </a>
+
+</div>
+```
 
 </section>
-
 
 <!-- RESUME -->
 
 <section id="resume">
 
-    <h2>Resume</h2>
+```
+<h2>Resume</h2>
 
-    <div class="box">
+<div class="box">
 
-        <p>
-            My resume provides additional information about my education,
-            professional experience, technical skills, certifications,
-            and data analytics projects.
-        </p>
+    <p>
+        My resume provides additional information about my education,
+        professional experience, technical skills, certifications,
+        and data analytics projects.
+    </p>
 
-        <a class="button" href="#">
-            Download Resume
-        </a>
+    <a class="button" href="#">
+        Download Resume
+    </a>
 
-    </div>
+</div>
+```
 
 </section>
 
+<!-- CONTACT -->
 
 <section id="contact">
 
-
+```
 <h2>Contact</h2>
 
 <div class="box">
@@ -509,27 +529,30 @@
 
     <p>
         <strong>Email:</strong>
-        <a href="mailto:belaynehephrem5@gmail.com">
+        <a class="email-link"
+           href="mailto:belaynehephrem5@gmail.com">
             belaynehephrem5@gmail.com
         </a>
     </p>
 
 </div>
-
+```
 
 </section>
-
 
 <!-- FOOTER -->
 
 <footer>
 
-    <p>
-        © 2026 Ephrem Belayneh | Data Analytics Portfolio
-    </p>
+```
+<p>
+    © 2026 Ephrem Belayneh | Data Analytics Portfolio
+</p>
+```
 
 </footer>
 
-
 </body>
+
 </html>
+
